@@ -1,9 +1,9 @@
-const num = parseInt(process.argv[2]);
-
-if (isNaN(num)) {
-  console.log('Missing number of occurrences'); // ✅ 1st console.log
+const size = Number(Process.argv[2]);
+if (isNaN(size)) {
+  console.log('Missing size');
 } else {
-  for (let i = 0; i < num; i++) {
-    console.log('C is fun'); // ✅ 2nd console.log (executed multiple times)
+  for (let i = 0; i < size; i++) {
+    console.log('X'.repeat(size));
   }
 }
+
